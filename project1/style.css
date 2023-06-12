@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* 'Noto Sans KR','Tenor Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Tenor+Sans&display=swap");
+
+/* 변수 설정 */
+:root {
+  --main-font: "Noto Sans KR", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --en-font: "Tenor Sans", "Noto Sans KR", sans-serif;
+}
+body {
+  font-family: var(--main-font);
+  line-height: 1.6;
+}
+header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.header-wrapper {
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  width: 170px;
+}
+header a {
+  display: block;
+}
+header nav .global-nav {
+  display: none;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding: 2% 3%;
+}
+header nav .global-nav a {
+  font-weight: 700;
+  padding: 14px 5px 10px;
+}
+header nav .mobile-btn span {
+  display: block;
+  text-indent: -9999px;
+  width: 30px;
+  height: 3px;
+  transition: 0.4s;
+  background-color: #222;
+  border-radius: 80px;
+  position: relative;
+  margin-bottom: 5px;
+}
