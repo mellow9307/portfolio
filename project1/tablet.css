@@ -112,7 +112,7 @@ header nav .global-nav a span {
   padding: 0;
 }
 .content .content-txt h2 {
-  font-size: 24px;
+  font-size: 20px;
   padding-left: 10px;
 }
 .content .content-txt p {
@@ -171,28 +171,37 @@ header nav .global-nav a span {
 .harkness {
   display: flex;
 }
+.harkness-intro {
+}
 .harkness .harkness-intro {
-  width: 28.505vw;
+  width: 30%;
+}
+.harkness .harkness-intro span {
+  font-size: 29px;
+  display: block;
 }
 .harkness .harkness-intro h2 {
   font-size: 30px;
+  line-height: 1.4;
+  padding-bottom: 10px;
 }
 .harkness .harkness-main {
+  width: 585px;
   padding-bottom: 60px;
-  gap: 61px;
 }
 .harkness .harkness-main .harkness-img {
   display: flex;
-  width: 57.129vw;
-  height: 20.205vw;
-  padding-bottom: 61px;
+  padding: 6.369vw 0 0 0;
 }
 .harkness .harkness-main .harkness-img img {
-  width: 270px;
-  height: 275.94px;
+  width: 26.367vw;
 }
 .harkness .harkness-main .harkness-img .harkness-img-txt {
-  height: 20.205vw;
+  width: 30.762vw;
+  padding: 3.221vw;
+}
+.harkness .harkness-main .harkness-img .harkness-img-txt p {
+  font-size: 12px;
 }
 /* footer */
 .footer-logo {
