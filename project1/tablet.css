@@ -191,7 +191,11 @@ header nav .global-nav a span {
 }
 .harkness .harkness-main .harkness-img {
   display: flex;
+  flex-direction: row-reverse;
   padding: 6.369vw 0 0 0;
+}
+.harkness .harkness-main .harkness-img:nth-child(2) {
+  flex-direction: row;
 }
 .harkness .harkness-main .harkness-img img {
   width: 26.367vw;
