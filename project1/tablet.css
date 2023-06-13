@@ -108,7 +108,7 @@ header nav .global-nav a span {
   font-size: 10px;
 }
 .content .content-txt {
-  width: 83.301vw;
+  width: 90%;
   padding: 0;
 }
 .content .content-txt h2 {
@@ -171,7 +171,8 @@ header nav .global-nav a span {
 .harkness {
   display: flex;
 }
-.harkness-intro {
+.harkness .harkness-intro {
+  padding: 6.369vw 0 0 0;
 }
 .harkness .harkness-intro {
   width: 30%;
