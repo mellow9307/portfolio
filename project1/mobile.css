@@ -28,7 +28,7 @@
   font-family: var(--en-font);
 }
 .main-intro .main-banner h1 {
-  font-size: 23px;
+  font-size: 26px;
   font-weight: 900;
 }
 .main-intro .main-intro-img a {
@@ -45,12 +45,15 @@
   padding-bottom: 23.474vw;
 }
 .main-intro .main-banner-txt h1 {
-  font-size: 35.2px;
+  font-size: 26px;
   font-style: normal;
 }
 .main-intro .main-banner-txt h1 .yellow {
   color: #ffec83;
   word-break: break-all;
+}
+.main-intro .main-banner-txt p {
+  font-size: 16px;
 }
 
 /* section2 */
@@ -70,12 +73,13 @@
   padding-left: 10px;
 }
 .content .content-img-txt h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   margin: 35px 0;
 }
 .content .content-img-txt p {
   padding-bottom: 30px;
+  font-size: 14px;
 }
 .content .content-txt {
   width: 90%;
@@ -84,12 +88,13 @@
   padding-left: 10px;
 }
 .content .content-txt h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   margin: 35px 0;
 }
 .content .content-txt p {
   padding-bottom: 30px;
+  font-size: 14px;
 }
 .content .content-list-img .slide {
   display: flex;
@@ -122,7 +127,7 @@
   margin: 0 auto;
 }
 .content-list .content-list-txt h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: var(--en-font);
   font-weight: 600;
 }
@@ -130,9 +135,20 @@
   font-weight: 600;
   float: left;
   margin-right: 5px;
+  font-size: 16px;
 }
 .content-list .content-list-ul {
   padding: 35px 0 60px 10px;
+}
+.content-list .content-list-ul h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.content-list .content-list-ul strong {
+  font-size: 20px;
+}
+.content-list .content-list-ul p {
+  font-size: 14px;
 }
 .content-list .content-list-ul li {
   margin-bottom: 7.042vh;
@@ -153,11 +169,14 @@
   padding: 36px 0;
 }
 .harkness .harkness-intro h2 {
-  font-size: 24px;
+  font-size: 30px;
 }
 .harkness .harkness-intro h2 span {
   font-weight: 700;
   padding-right: 5px;
+}
+.harkness .harkness-intro p {
+  font-size: 20px;
 }
 .harkness .harkness-main {
   width: 90%;
@@ -167,18 +186,19 @@
   padding-bottom: 4.812vh;
 }
 .harkness .harkness-img-txt {
-  height: 30.282vh;
+  width: 89.822vw;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 4.108vh 5%;
 }
 .harkness .harkness-img-txt h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: var(--en-font);
   font-weight: 900;
   padding-bottom: 2.465vh;
 }
 .harkness .harkness-img-txt p {
   padding-bottom: 21px;
+  font-size: 14px;
 }
 
 /* footer */
@@ -214,16 +234,27 @@ footer {
   padding: 5px 0;
   color: #999;
 }
-.notice .profile p:first-child {
+.profile p {
+  padding: 5px 0;
+  color: #999;
+}
+.profile p:first-child {
   width: 180px;
   display: block;
   border: 1px solid #000;
   text-align: center;
+  margin-left: 5%;
 }
-.notice .profile p:last-child {
+.profile p:last-child {
   font-weight: bold;
   color: #000;
+  margin-left: 5%;
 }
-.notice .notice-box:last-child {
+.footer-copyright {
   font-size: 12px;
+  margin-left: 5%;
+}
+.footer-copyright p {
+  padding: 5px 0;
+  color: #999;
 }
