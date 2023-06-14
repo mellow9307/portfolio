@@ -35,14 +35,22 @@ header nav .global-nav a span {
 }
 
 /* contents */
-
+.main-slide .swiper .swiper-wrapper {
+  display: flex;
+}
 .main-slide .swiper .swiper-wrapper .swiper-slide {
   background: url(./images/main1.png) no-repeat 50% / cover;
   text-indent: -9999px;
-  width: 100%;
+  width: 50%;
   height: 46.5278vw;
 }
-
+.main-slide .swiper .swiper-wrapper .swiper-slide:nth-child(2) {
+  background: url(./images/main2.png) no-repeat 25% / cover;
+  text-indent: -9999px;
+  width: 50%;
+  height: 46.5278vw;
+  display: flex;
+}
 /* section1 */
 .main-intro .main-banner {
   text-align: center;
@@ -119,6 +127,13 @@ header nav .global-nav a span {
   font-size: 12px;
   padding-left: 10px;
 }
+.content .content-btn span {
+  padding-left: 3%;
+}
+.content .content-btn span svg {
+  width: 30px;
+  height: 30px;
+}
 .content .content-list-img {
   width: 100%;
 }
@@ -151,7 +166,6 @@ header nav .global-nav a span {
 }
 .content .content-list .content-list-txt {
   grid-column: 1/2;
-  margin-right: 13.77vw;
 }
 .content .content-list .content-list-txt h2 {
   font-size: 30px;
@@ -174,11 +188,8 @@ header nav .global-nav a span {
 .harkness .harkness-intro {
   padding: 6.369vw 0 0 0;
 }
-.harkness .harkness-intro {
-  width: 30%;
-}
 .harkness .harkness-intro span {
-  font-size: 29px;
+  font-size: 30px;
   display: block;
 }
 .harkness .harkness-intro h2 {
@@ -189,21 +200,32 @@ header nav .global-nav a span {
 .harkness .harkness-main {
   width: 585px;
   padding-bottom: 60px;
+  justify-content: center;
 }
 .harkness .harkness-main .harkness-img {
   display: flex;
   flex-direction: row-reverse;
-  padding: 6.369vw 0 0 0;
+  padding: 6.369vw 6.369vw 0 6.369vw;
 }
 .harkness .harkness-main .harkness-img:nth-child(2) {
   flex-direction: row;
 }
-.harkness .harkness-main .harkness-img img {
-  width: 26.367vw;
+.harkness .harkness-main .harkness-img .harkness-img-list {
+  background: url(./images/block.png) no-repeat 50% / cover;
+  width: 50%;
+}
+.harkness .harkness-main .harkness-img:nth-child(2) .harkness-img-list {
+  background: url(./images/book.png) no-repeat 50% / cover;
+}
+.harkness .harkness-main .harkness-img:nth-child(3) .harkness-img-list {
+  background: url(./images/alphabet-animal-part1-.jpg) no-repeat 50% / cover;
 }
 .harkness .harkness-main .harkness-img .harkness-img-txt {
   width: 30.762vw;
-  padding: 3.221vw;
+  padding: 2.5vw;
+}
+.harkness .harkness-main .harkness-img .harkness-img-txt h2 {
+  font-size: 30px;
 }
 .harkness .harkness-main .harkness-img .harkness-img-txt p {
   font-size: 12px;
@@ -228,7 +250,7 @@ header nav .global-nav a span {
 .profile {
   display: flex;
   justify-content: right;
-  padding-right: 5%;
+  padding-right: 7%;
   gap: 11px;
 }
 .footer-last .profile p {

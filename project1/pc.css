@@ -20,22 +20,26 @@ header nav .global-nav {
   display: flex;
   position: static;
   padding: 0;
+  flex-flow: row nowrap;
 }
 header nav .global-nav li {
   display: flex;
   text-align: center;
   font-family: var(--en-font);
+  font-size: 16px;
 }
 header nav .global-nav a span {
   color: #ffce07;
   font-weight: 400;
+  font-size: 14px;
 }
+
 /* contents */
 
 .main-slide .swiper .swiper-wrapper .swiper-slide {
   background: url(./images/main1.png) no-repeat 50% / cover;
   text-indent: -9999px;
-  width: 100%;
+  width: 50%;
   height: 46.5278vw;
 }
 
@@ -64,6 +68,9 @@ header nav .global-nav a span {
   justify-content: center;
   font-size: 38px;
 }
+.main-intro .main-banner-txt p {
+  font-size: 16px;
+}
 
 /* section2 */
 .content .content-intro {
@@ -81,4 +88,61 @@ header nav .global-nav a span {
   width: 30.938vh;
   padding: 0;
   margin: 0 auto;
+}
+.content .content-intro .content-img-txt p {
+  font-size: 16px;
+}
+.content .content-txt p {
+  font-size: 16px;
+}
+.content .content-list .content-list-ul ul {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 65px;
+}
+.content .content-list .content-list-ul ul li {
+  width: 310px;
+}
+.content .content-list .content-list-ul ul:nth-child(1) li {
+  grid-template-columns: 1/2;
+  grid-template-rows: 1/2;
+}
+.content .content-list .content-list-ul ul:nth-child(2) li {
+  grid-template-columns: 2/3;
+  grid-template-rows: 1/2;
+}
+.content .content-list .content-list-ul ul:nth-child(3) li {
+  grid-template-columns: 1/2;
+  grid-template-rows: 2/3;
+}
+.content .content-list .content-list-ul ul p {
+  font-size: 16px;
+}
+
+/* section3 */
+.harkness .harkness-intro span {
+  display: contents;
+}
+.harkness .harkness-main {
+  padding-bottom: 60px;
+}
+.harkness .harkness-main .harkness-img {
+  width: 721px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 6.369vw 0 0 0;
+}
+.harkness .harkness-main .harkness-img:nth-child(2) {
+  flex-direction: row;
+}
+.harkness .harkness-main .harkness-img img {
+  width: 318px;
+}
+.harkness .harkness-main .harkness-img .harkness-img-txt {
+  width: 403px;
+  /* padding: 2.5vw; */
+  justify-content: center;
+}
+.harkness .harkness-main .harkness-img .harkness-img-txt p {
+  font-size: 12px;
 }

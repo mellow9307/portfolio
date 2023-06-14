@@ -1,5 +1,21 @@
 @charset "utf-8";
-
+/* header */
+/* header nav .global-nav li {
+  display: flex;
+  text-align: left;
+  font-family: var(--en-font);
+  font-size: 16px;
+}
+header nav .global-nav a span {
+  color: #ffce07;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold;
+}
+nav .global-nav.active {
+  display: flex;
+} */
 /* contents */
 
 .main-slide .swiper .swiper-wrapper .swiper-slide {
@@ -8,7 +24,9 @@
   width: 100%;
   height: 41.432vh;
 }
-
+.main-slide .swiper .swiper-wrapper .swiper-slide:nth-child(2) {
+  display: none;
+}
 /* section1 */
 
 .main-intro {
@@ -96,6 +114,13 @@
   padding-bottom: 30px;
   font-size: 14px;
 }
+.content .content-btn {
+  text-align: right;
+  padding: 0 10% 2% 0;
+}
+.content .content-btn span {
+  padding-left: 10px;
+}
 .content .content-list-img .slide {
   display: flex;
   overflow: hidden;
@@ -164,7 +189,7 @@
 .harkness .harkness-intro {
   margin-left: 5%;
   color: #fff;
-  font-family: var(--en-font);
+
   font-weight: 700;
   padding: 36px 0;
 }
@@ -174,6 +199,7 @@
 .harkness .harkness-intro h2 span {
   font-weight: 700;
   padding-right: 5px;
+  font-family: var(--en-font);
 }
 .harkness .harkness-intro p {
   font-size: 20px;
@@ -184,6 +210,17 @@
 }
 .harkness .harkness-img {
   padding-bottom: 4.812vh;
+}
+.harkness .harkness-main .harkness-img .harkness-img-list {
+  background: url(./images/block.png) no-repeat 50% / cover;
+  width: 89.822vw;
+  height: 35.211vh;
+}
+.harkness .harkness-main .harkness-img:nth-child(2) .harkness-img-list {
+  background: url(./images/book.png) no-repeat 50% / cover;
+}
+.harkness .harkness-main .harkness-img:nth-child(3) .harkness-img-list {
+  background: url(./images/alphabet-animal-part1-.jpg) no-repeat 50% / cover;
 }
 .harkness .harkness-img-txt {
   width: 89.822vw;
@@ -221,9 +258,10 @@ footer {
 }
 .notice {
   padding: 6.573vh 5%;
+  font-size: 12px;
 }
 .notice .notice-box {
-  width: 90%;
+  width: 80%;
   padding-bottom: 20px;
 }
 .notice .notice-box p:first-child {
