@@ -205,7 +205,7 @@ nav .global-nav.active {
   font-size: 20px;
 }
 .harkness .harkness-main {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .harkness .harkness-img {
@@ -213,8 +213,9 @@ nav .global-nav.active {
 }
 .harkness .harkness-main .harkness-img .harkness-img-list {
   background: url(./images/block.png) no-repeat 50% / cover;
-  width: 89.822vw;
+  width: 95%;
   height: 35.211vh;
+  margin: auto;
 }
 .harkness .harkness-main .harkness-img:nth-child(2) .harkness-img-list {
   background: url(./images/book.png) no-repeat 50% / cover;
@@ -223,9 +224,11 @@ nav .global-nav.active {
   background: url(./images/alphabet-animal-part1-.jpg) no-repeat 50% / cover;
 }
 .harkness .harkness-img-txt {
-  width: 89.822vw;
+  width: 95%;
+  height: 35.211vh;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 4.108vh 5%;
+  margin: auto;
 }
 .harkness .harkness-img-txt h2 {
   font-size: 20px;
@@ -295,4 +298,7 @@ footer {
 .footer-copyright p {
   padding: 5px 0;
   color: #999;
+}
+.footer-copyright p:last-child {
+  padding-bottom: 30px;
 }
