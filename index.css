@@ -32,7 +32,7 @@ nav li a {
 .header-wrapper h1 {
   color: #333;
   font-size: 230px;
-  font-family: Moret;
+  font-family: "Moret", "Assistant", sans-serif;
   letter-spacing: -0.92px;
   padding-left: 72px;
   /* min-width: 1000px; */
@@ -66,7 +66,7 @@ nav li a {
   font-family: "Moret", "Assistant", sans-serif;
   text-transform: capitalize;
   padding-top: 13.5rem;
-  align-items: center;
+  align-items: baseline;
   flex-basis: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -246,6 +246,8 @@ nav li a {
   font-family: "Pretendard", "Assistant", sans-serif;
   line-height: 2.4375rem;
   letter-spacing: -0.01375rem;
+  display: inline-flex;
+  align-items: center;
 }
 .skill .skill-list-box .skill-list li span {
   display: inline-block;
@@ -269,12 +271,14 @@ nav li a {
   gap: 3.01rem;
 }
 .contact .contact-box .contact-intro {
-  width: 23.05438rem;
-  height: 34.875rem;
+  width: 23rem;
+  height: 34.8rem;
   border-radius: 50px;
   border: 3px solid #265d49;
   text-align: left;
   padding: 6.45rem 3.62rem 0 3.56rem;
+  position: relative;
+  overflow: hidden;
 }
 .contact .contact-box .contact-intro h2 {
   color: #000;
@@ -293,17 +297,46 @@ nav li a {
   line-height: 1.875rem;
 }
 .contact .contact-box .contact-intro p:last-child {
-  width: 23.05438rem;
-  height: 5.78456rem;
-  border-radius: 0px 0px 50px 50px;
+  width: 100%;
+  height: 5.7rem;
   background: #265d49;
   margin-top: 5.09rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #e39d3d;
+  font-size: 1.375rem;
+  font-family: "Vulf Sans";
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
 }
 .contact .contact-box .contact-txt {
   width: 61.61806rem;
   height: 34.875rem;
   border-radius: 50px;
   border: 3px solid #265d49;
+}
+.contact .contact-box .contact-txt ul {
+  padding: 7.12rem 0 0 21.87rem;
+}
+.contact .contact-box .contact-txt li {
+  color: #000;
+  font-size: 1.5rem;
+  font-family: "Pretendard";
+  font-weight: 500;
+  line-height: 4.75rem;
+  letter-spacing: -0.03rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.contact .contact-box .contact-txt li span {
+  background: url(./images/Bstar.png) no-repeat 50% / cover;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  margin-right: 25px;
 }
 footer .footer-slide {
   display: flex;
@@ -312,7 +345,7 @@ footer .footer-slide {
   font-family: "Moret", "Assistant", sans-serif;
   text-transform: capitalize;
   padding-top: 13.5rem;
-  align-items: center;
+  align-items: baseline;
   flex-basis: 0;
   white-space: nowrap;
   overflow: hidden;
