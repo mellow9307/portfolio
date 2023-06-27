@@ -48,3 +48,45 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* moret */
+@font-face {
+  font-family: "Moret";
+  src: url(../fonts/Moret-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moret";
+  src: url(../fonts/Moret-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moret";
+  src: url(../fonts/Moret-Semibold.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moret";
+  src: url(../fonts/Moret-Extrabold.woff2) format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* hanna */
+@font-face {
+  font-family: "BM_HANNA_Air";
+  src: url(../fonts/BMHANNAAir.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
