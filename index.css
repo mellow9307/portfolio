@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+body {
+  background-color: #f8f3e8;
+}
+/* header*/
+nav {
+  width: 100%;
+  height: 70px;
+  background: #f8f3e8;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  line-height: 70px;
+}
+nav li {
+  width: 25%;
+}
+nav li a {
+  margin: 0 auto;
+  color: #265d49;
+  font-size: 24px;
+  font-family: "Moret", "Assistant", sans-serif;
+  text-transform: capitalize;
+}
+.header-wrapper {
+  white-space: nowrap;
+  position: relative;
+}
+.header-wrapper h1 {
+  color: #333;
+  font-size: 230px;
+  font-family: Moret;
+  letter-spacing: -0.92px;
+  padding-left: 72px;
+  /* min-width: 1000px; */
+  line-height: 220px;
+}
+.header-wrapper h1:nth-child(2) {
+  font-family: "Vulf Sans", "Assistant", sans-serif;
+}
+.header-wrapper .star {
+  width: 140px;
+  height: 140px;
+  background: url(./images/Bstar.png) no-repeat 50% / cover;
+  position: absolute;
+  top: 17.5rem;
+  left: 69.94rem;
+}
+.header-wrapper p {
+  color: #333;
+  font-size: 50px;
+  font-family: "BM HANNA Air", "Assistant", sans-serif;
+  letter-spacing: -0.15px;
+  padding-left: 98px;
+}
+.header-wrapper p span {
+  display: block;
+}
+.header-slide {
+  display: flex;
+  color: #265d49;
+  font-size: 80px;
+  font-family: "Moret", "Assistant", sans-serif;
+  text-transform: capitalize;
+  padding-top: 13.5rem;
+  align-items: center;
+  flex-basis: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.header-slide h2 > span {
+  font-family: "Vulf Sans";
+  margin-left: 20px;
+}
+.header-slide > span {
+  background: url(./images/Bstar.png) no-repeat 50% / contain;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.header-box-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  border-radius: 50px;
+  border: 4px solid #265d49;
+  background: #f8f3e8;
+  overflow: hidden;
+}
+.header-box-slide h3 {
+  flex-basis: 0;
+  white-space: nowrap;
+  color: #265d49;
+  font-size: 24px;
+  font-family: "Vulf Sans", "Assistant", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+.header-box-slide > span {
+  background: url(./images/Bstar.png) no-repeat 50% / contain;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.container .container-wrapper {
+  padding-left: 72px;
+  padding-top: 87px;
+}
+.container .container-wrapper h1 {
+  color: #333;
+  font-size: 160px;
+  font-family: Moret;
+  line-height: 135px;
+  letter-spacing: -3.2px;
+}
+.container {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 134px;
+}
+.container .container-wrapper h1 span {
+  font-family: "Vulf Sans", "Assistant", sans-serif;
+  display: block;
+}
+.container .container-wrapper h2 {
+  color: #333;
+  font-size: 80px;
+  font-family: Moret;
+  letter-spacing: -4px;
+  padding-top: 24px;
+}
+.container .container-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  right: 18px;
+  gap: 30px;
+}
+.container-box {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.container .container-btn {
+  margin-right: 1.12rem;
+}
+.container .container-btn span {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  border: 5px solid #265d49;
+  background: #f8f3e8;
+  margin-bottom: 41px;
+}
+.container .container-btn span a {
+  color: #265d49;
+  font-size: 26px;
+  font-family: "Vulf Sans", "Assistant", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 80px;
+  text-align: center;
+  white-space: normal;
+  display: block;
+}
+.container .container-img {
+  width: 130%;
+  position: relative;
+  transform: translateX(20%);
+  padding-top: 2.56px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 48px;
+}
+.container .container-img a {
+  display: block;
+  width: 39.4375rem;
+  height: 38.25rem;
+  background-color: #ddd;
+  border-radius: 0 0 50px 50px;
+}
+.skill {
+  width: 100%;
+  height: 62.375rem;
+  background: #265d49;
+}
+.skill .skill-intro {
+  padding: 1.75rem 0 0 4.5rem;
+  color: #f8f3e8;
+  font-size: 5rem;
+  font-family: "Moret", "Assistant", sans-serif;
+  position: relative;
+}
+.skill .skill-intro span {
+  background: url(./images/Wstar.png) no-repeat 50% / cover;
+  width: 1.875rem;
+  height: 1.88163rem;
+  display: block;
+  position: absolute;
+}
+.skill .skill-intro span:first-child {
+  top: 6.37rem;
+  left: 2.06rem;
+}
+.skill .skill-intro span:last-child {
+  top: 2.62rem;
+  left: 41rem;
+}
+.skill .skill-list-box {
+  padding-top: 1.94rem;
+  display: grid;
+  grid: repeat(2, 1fr) / repeat(2, 1fr);
+  width: 87.5rem;
+  margin: 0 auto;
+}
+.skill .skill-list-box .skill-list {
+  border: 1px solid #f8f3e8;
+  border-radius: 50px;
+  width: 43.75rem;
+  height: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  padding-left: 8.19rem;
+}
+.skill .skill-list-box .skill-list:nth-child(2) {
+  grid-column: 2/3;
+}
+.skill .skill-list-box .skill-list p {
+  color: #e39d3d;
+  font-size: 2.5rem;
+  font-family: "Pretendard", "Assistant", sans-serif;
+  font-weight: 600;
+  line-height: 4.75rem;
+  letter-spacing: -0.025rem;
+  margin-bottom: 0.63rem;
+}
+.skill .skill-list-box .skill-list li {
+  color: #f8f3e8;
+  font-size: 1.375rem;
+  font-family: "Pretendard", "Assistant", sans-serif;
+  line-height: 2.4375rem;
+  letter-spacing: -0.01375rem;
+}
+.skill .skill-list-box .skill-list li span {
+  display: inline-block;
+  background: url(./images/Wstar.png) no-repeat 50% / cover;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  flex-shrink: 0;
+  margin-right: 1.25rem;
+}
+.contact h1 {
+  color: #333;
+  font-size: 7.5rem;
+  font-family: "Moret", "Assistant", sans-serif;
+  line-height: 6.25rem;
+  letter-spacing: -0.15rem;
+  margin: 1.88rem 0 0 4.5rem;
+}
+.contact .contact-box {
+  padding: 3.06rem 0 5.81rem 11.06rem;
+  display: flex;
+  gap: 3.01rem;
+}
+.contact .contact-box .contact-intro {
+  width: 23.05438rem;
+  height: 34.875rem;
+  border-radius: 50px;
+  border: 3px solid #265d49;
+  text-align: left;
+  padding: 6.45rem 3.62rem 0 3.56rem;
+}
+.contact .contact-box .contact-intro h2 {
+  color: #000;
+  font-size: 3.75rem;
+  font-family: "Moret", "Assistant", sans-serif;
+  line-height: 3.75rem;
+}
+.contact .contact-box .contact-intro h2 span {
+  display: block;
+}
+.contact .contact-box .contact-intro p {
+  padding-top: 2.55rem;
+  color: #000;
+  font-size: 1.25rem;
+  font-family: "Pretendard";
+  line-height: 1.875rem;
+}
+.contact .contact-box .contact-intro p:last-child {
+  width: 23.05438rem;
+  height: 5.78456rem;
+  border-radius: 0px 0px 50px 50px;
+  background: #265d49;
+  margin-top: 5.09rem;
+}
+.contact .contact-box .contact-txt {
+  width: 61.61806rem;
+  height: 34.875rem;
+  border-radius: 50px;
+  border: 3px solid #265d49;
+}
+footer .footer-slide {
+  display: flex;
+  color: #265d49;
+  font-size: 80px;
+  font-family: "Moret", "Assistant", sans-serif;
+  text-transform: capitalize;
+  padding-top: 13.5rem;
+  align-items: center;
+  flex-basis: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+footer .footer-slide span {
+  background: url(./images/Bstar.png) no-repeat 50% / cover;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
