@@ -1,5 +1,18 @@
 @charset "utf-8";
-
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  height: 30%;
+  background-color: #265d49;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #f8f3e8;
+}
 body {
   background-color: #f8f3e8;
 }
@@ -8,6 +21,8 @@ nav {
   width: 100%;
   height: 70px;
   background: #f8f3e8;
+  position: fixed;
+  z-index: 999;
 }
 nav ul {
   width: 100%;
@@ -18,16 +33,31 @@ nav ul {
 nav li {
   width: 25%;
 }
+
 nav li a {
+  display: block;
+  width: 30%;
   margin: 0 auto;
   color: #265d49;
   font-size: 24px;
   font-family: "Moret", "Assistant", sans-serif;
   text-transform: capitalize;
 }
+li a:after {
+  display: block;
+  width: 100%;
+  content: "";
+  border-bottom: solid 2px #265d49;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+li a:hover:after {
+  transform: scaleX(1);
+}
 .header-wrapper {
   white-space: nowrap;
   position: relative;
+  padding-top: 3.69rem;
 }
 .header-wrapper h1 {
   color: #333;
@@ -46,8 +76,22 @@ nav li a {
   height: 140px;
   background: url(./images/Bstar.png) no-repeat 50% / cover;
   position: absolute;
-  top: 17.5rem;
+  top: 16rem;
   left: 69.94rem;
+  animation: star infinite 3s ease-in-out;
+}
+@keyframes star {
+  0%,
+  100% {
+    transform-origin: 50%;
+    transform: translateY(30px);
+  }
+  50% {
+    transform-origin: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translateX(-30px);
+  }
 }
 .header-wrapper p {
   color: #333;
@@ -71,11 +115,28 @@ nav li a {
   white-space: nowrap;
   overflow: hidden;
 }
+.header-slide .header-slide-box {
+  display: flex;
+  width: 200%;
+  animation: slide 60s linear infinite;
+}
+.header-slide .header-slide-box .leftBox {
+  display: flex;
+  align-items: center;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 .header-slide h2 > span {
   font-family: "Vulf Sans";
   margin-left: 20px;
 }
-.header-slide > span {
+.header-slide .leftBox > span {
   background: url(./images/Bstar.png) no-repeat 50% / contain;
   width: 60px;
   height: 60px;
@@ -91,6 +152,23 @@ nav li a {
   background: #f8f3e8;
   overflow: hidden;
 }
+.header-box-slide .header-box {
+  display: flex;
+  width: 200%;
+  animation: slide2 60s linear infinite reverse;
+}
+@keyframes slide2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.header-box-slide .header-box .slide-box {
+  display: flex;
+  align-items: center;
+}
 .header-box-slide h3 {
   flex-basis: 0;
   white-space: nowrap;
@@ -101,7 +179,7 @@ nav li a {
   letter-spacing: 1.44px;
   text-transform: uppercase;
 }
-.header-box-slide > span {
+.header-box-slide .header-box .slide-box > span {
   background: url(./images/Bstar.png) no-repeat 50% / contain;
   width: 24px;
   height: 24px;
@@ -109,7 +187,8 @@ nav li a {
 }
 .container .container-wrapper {
   padding-left: 72px;
-  padding-top: 87px;
+  padding-top: 6rem;
+  /* opacity: 0; */
 }
 .container .container-wrapper h1 {
   color: #333;
@@ -141,6 +220,7 @@ nav li a {
   right: 18px;
   gap: 30px;
 }
+
 .container-box {
   width: 100%;
   flex-wrap: wrap;
@@ -149,15 +229,8 @@ nav li a {
 .container .container-btn {
   margin-right: 1.12rem;
 }
-.container .container-btn span {
-  width: 90px;
-  height: 90px;
-  border-radius: 90px;
-  border: 5px solid #265d49;
-  background: #f8f3e8;
-  margin-bottom: 41px;
-}
-.container .container-btn span a {
+
+.container .container-btn a {
   color: #265d49;
   font-size: 26px;
   font-family: "Vulf Sans", "Assistant", sans-serif;
@@ -167,6 +240,19 @@ nav li a {
   text-align: center;
   white-space: normal;
   display: block;
+  transition: 0.3s;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  border: 5px solid #265d49;
+  background: #f8f3e8;
+  margin-bottom: 41px;
+  transition: 0.4s;
+}
+.container .container-btn a:hover {
+  background-color: #265d49;
+  color: #f8f3e8;
+  border-radius: 90px;
 }
 .container .container-img {
   width: 130%;
@@ -183,6 +269,19 @@ nav li a {
   height: 38.25rem;
   background-color: #ddd;
   border-radius: 0 0 50px 50px;
+  transition: 0.4s;
+}
+
+.container .container-img a:nth-child(1) {
+  background: url(./images/kinkong.png) no-repeat 50% / cover;
+  opacity: 0.6;
+}
+.container .container-img a:nth-child(2) {
+  background: url(./images/redesign.png) no-repeat 50% / cover;
+  opacity: 0.6;
+}
+.container .container-img a:hover {
+  opacity: 1;
 }
 .skill {
   width: 100%;
@@ -190,26 +289,37 @@ nav li a {
   background: #265d49;
 }
 .skill .skill-intro {
-  padding: 1.75rem 0 0 4.5rem;
+  padding: 4rem 0 0 4.5rem;
   color: #f8f3e8;
   font-size: 5rem;
   font-family: "Moret", "Assistant", sans-serif;
   position: relative;
 }
+
 .skill .skill-intro span {
   background: url(./images/Wstar.png) no-repeat 50% / cover;
   width: 1.875rem;
   height: 1.88163rem;
   display: block;
   position: absolute;
+  animation: size infinite 2s ease-in-out;
+}
+@keyframes size {
+  0%,
+  100% {
+    transform: rotate(-100deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
 }
 .skill .skill-intro span:first-child {
   top: 6.37rem;
-  left: 2.06rem;
+  left: 2rem;
 }
 .skill .skill-intro span:last-child {
-  top: 2.62rem;
-  left: 37.5rem;
+  top: 4.8rem;
+  left: 38rem;
 }
 .skill .skill-list-box {
   padding-top: 1.94rem;
@@ -227,6 +337,10 @@ nav li a {
   flex-direction: column;
   place-content: center;
   padding-left: 8.19rem;
+  transition: 0.3s;
+}
+.skill .skill-list-box .skill-list:hover {
+  background-color: rgb(248, 243, 232, 0.3);
 }
 .skill .skill-list-box .skill-list:nth-child(2) {
   grid-column: 2/3;
@@ -263,7 +377,7 @@ nav li a {
   font-family: "Moret", "Assistant", sans-serif;
   line-height: 6.25rem;
   letter-spacing: -0.15rem;
-  margin: 1.88rem 0 0 4.5rem;
+  padding: 6rem 0 0 4.5rem;
 }
 .contact .contact-box {
   padding: 3.06rem 0 5.81rem 11.06rem;
@@ -344,13 +458,30 @@ footer .footer-slide {
   font-size: 80px;
   font-family: "Moret", "Assistant", sans-serif;
   text-transform: capitalize;
-  padding-top: 13.5rem;
+  padding-top: 10rem;
   align-items: baseline;
   flex-basis: 0;
   white-space: nowrap;
   overflow: hidden;
 }
-footer .footer-slide span {
+.footer-slide .footer-slide-box {
+  display: flex;
+  width: 200%;
+  animation: slide 60s linear infinite;
+}
+.footer-slide .footer-slide-box .leftBox {
+  display: flex;
+  align-items: center;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+footer .footer-slide .leftBox > span {
   background: url(./images/Bstar.png) no-repeat 50% / cover;
   width: 60px;
   height: 60px;
