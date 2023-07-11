@@ -93,12 +93,25 @@ li a:hover:after {
     transform: translateX(-30px);
   }
 }
-.header-wrapper p {
+.header-wrapper .text_box {
+  display: block;
+  height: 120px;
   color: #333;
-  font-size: 50px;
+  font-size: 3.5rem;
   font-family: "Pretendard Variable", "Assistant", sans-serif;
   letter-spacing: -0.15px;
-  padding-left: 98px;
+  margin-left: 98px;
+  text-align: left;
+}
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 3.5rem;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
 }
 .header-wrapper p span {
   display: block;
@@ -193,7 +206,7 @@ li a:hover:after {
 .container .container-wrapper h1 {
   color: #333;
   font-size: 160px;
-  font-family: Moret;
+  font-family: "Moret";
   line-height: 135px;
   letter-spacing: -3.2px;
 }
@@ -214,7 +227,7 @@ li a:hover:after {
   padding-top: 24px;
 }
 .container .container-btn {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: flex-end;
   right: 18px;
@@ -222,15 +235,24 @@ li a:hover:after {
 }
 
 .container-box {
-  width: 100%;
+  width: 80%;
+  height: 100vh;
   flex-wrap: wrap;
   display: flex;
+  justify-content: flex-end;
+  margin-right: 0;
+  padding-top: 131px;
 }
-.container .container-btn {
-  margin-right: 1.12rem;
+.swiper_btn {
+  position: absolute;
+  top: 520px;
+  right: 150px;
 }
-
-.container .container-btn a {
+.swiper {
+  position: static;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
   color: #265d49;
   font-size: 26px;
   font-family: "Vulf Sans", "Assistant", sans-serif;
@@ -239,28 +261,32 @@ li a:hover:after {
   line-height: 80px;
   text-align: center;
   white-space: normal;
-  display: block;
-  transition: 0.3s;
   width: 90px;
   height: 90px;
-  border-radius: 90px;
+  border-radius: 50%;
   border: 5px solid #265d49;
   background: #f8f3e8;
   margin-bottom: 41px;
   transition: 0.4s;
 }
-.container .container-btn a:hover {
+.swiper-button-next,
+.swiper-button-prev {
+  width: auto;
+  height: auto;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after:hover {
   background-color: #265d49;
   color: #f8f3e8;
   border-radius: 90px;
 }
 .container .container-img {
-  width: 130%;
+  width: 80%;
   position: relative;
   transform: translateX(20%);
   padding-top: 2.56px;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   gap: 48px;
 }
 .container .container-img a {
