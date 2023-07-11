@@ -26,12 +26,3 @@ $(window).on("scroll", () => {
     }
   });
 });
-
-document
-  .querySelector(".menu_wrapper_list li:nth-child(1) svg path")
-  .getTotalLength();
-console.log(
-  document
-    .querySelector(".menu_wrapper_list li:nth-child(1) svg path")
-    .getTotalLength()
-);
