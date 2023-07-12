@@ -18,7 +18,7 @@ const mySwiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   slidesPerView: "2.6",
-  //   slidesOffsetBefore: 0,
+  // slidesOffsetBefore: 0,
   //   slidesOffsetAfter: -500,
   autoplay: {
     delay: 2000,

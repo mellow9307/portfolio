@@ -118,76 +118,38 @@ nav .global-nav.active {
   text-align: right;
   padding: 0 10% 2% 0;
 }
-/* .content .content-btn span {
-  padding-left: 10px;
-}
-.content .content-list-img .slide {
-  display: flex;
-  overflow: hidden;
-  padding-bottom: 70px;
-}
-.content .content-list-img .slide li {
-  margin-left: 5%;
-  display: flex;
-  position: relative;
-}
-.content .content-list-img .slide li .slide-book {
-  width: 40.962vh;
-  height: 20.54vh;
-  background: url(./images/slide.png) no-repeat 50% / cover;
-}
-.content .content-list-img .slide li:nth-child(2) a {
-  width: 40.962vh;
-  height: 20.54vh;
-  background: url(./images/slide2.png) no-repeat 50% / cover;
-  margin-left: 5%;
-}
-
-.content .content-list-img .slide .content-gallery-txt {
-  bottom: 5%;
-  right: 5%;
-  position: absolute;
-} */
-
 .mySwiper {
-  /* overflow: hidden; */
+  padding-bottom: 24vw;
 }
 .mySwiper .swiper-wrapper {
-  /* overflow: hidden; */
   width: 100%;
   height: 37.11vw;
 }
 .mySwiper .swiper-wrapper .swiper-slide {
-  /* margin-left: 5%; */
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
 .mySwiper .swiper-wrapper .swiper-slide .slide-book {
-  /* height: 37.11vw; */
-  /* width: 71.46vw; */
   width: 100%;
   height: 100%;
   display: block;
   background: url(./images/slide.png) no-repeat 50% / cover;
 }
-.mySwiper .swiper-wrapper .swiper-slide .slide-book .content-gallery-txt {
+.mySwiper .swiper-wrapper .swiper-slide .content-gallery-txt {
   position: absolute;
-  top: 50px;
+  bottom: 10px;
+  right: 10px;
 }
 .mySwiper .swiper-wrapper .swiper-slide .slide-girl {
-  /* width: 55.75vw; */
   display: block;
-  /* height: 37.11vw; */
   width: 100%;
   height: 100%;
   background: url(./images/slide2.png) no-repeat 50% / cover;
 }
 .mySwiper .swiper-wrapper .swiper-slide .slide-teach {
-  /* width: 55.75vw; */
   display: block;
-  /* height: 37.11vw; */
   width: 100%;
   height: 100%;
   background: url(./images/slide3.jpg) no-repeat 50% / cover;
@@ -195,6 +157,7 @@ nav .global-nav.active {
 .swiper-button-next,
 .swiper-button-prev {
   height: 21px;
+  color: orangered;
 }
 
 .content-list {

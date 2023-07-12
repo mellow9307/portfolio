@@ -306,6 +306,10 @@ li .button:hover:after {
   background: url(./images/redesign.jpg) no-repeat 50% / cover;
   opacity: 0.6;
 }
+.container .container-img a:nth-child(3) {
+  background: url(./images/teddy_bear1.png) no-repeat 50% / cover;
+  opacity: 0.6;
+}
 .container .container-img a:hover {
   opacity: 1;
 }
@@ -459,7 +463,7 @@ li .button:hover:after {
   border: 3px solid #265d49;
 }
 .contact .contact-box .contact-txt ul {
-  padding: 7.12rem 0 0 21.87rem;
+  padding: 6rem 0 0 21.87rem;
   width: 72%;
 }
 .contact .contact-box .contact-txt li {
@@ -474,6 +478,12 @@ li .button:hover:after {
   align-items: center;
   position: relative;
 }
+.contact .contact-box .contact-txt li:nth-child(3) span,
+.contact .contact-box .contact-txt li:nth-child(4) span,
+.contact .contact-box .contact-txt li:nth-child(5) span {
+  animation: size infinite 2s ease-in-out;
+}
+
 .git:hover {
   color: #265d49;
   background: transparent;

@@ -127,38 +127,6 @@ header nav .global-nav a span {
   font-size: 12px;
   padding-left: 10px;
 }
-
-/* .content .content-btn span {
-  padding-left: 3%;
-}
-.content .content-btn span svg {
-  width: 30px;
-  height: 30px;
-}
-.content .content-list-img {
-  width: 100%;
-}
-.content .content-list-img .slide li {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-}
-.content .content-list-img .slide li .slide-book {
-  width: 71.459vw;
-  height: 27.818vw;
-  background: url(./images/slide.png) no-repeat 50% / cover;
-}
-.content .content-list-img .slide li:nth-child(2) a {
-  width: 40.962vh;
-  height: 27.818vw;
-  background: url(./images/slide2.png) no-repeat 50% / cover;
-  margin-left: 5%;
-}
-.content .content-list-img .slide .content-gallery-txt {
-  bottom: 5%;
-  right: 5%;
-  position: absolute;
-} */
 .mySwiper .swiper-wrapper .swiper-slide .content-gallery-txt {
   position: absolute;
   bottom: 10px;
