@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../common/style/reset.css">
   <link rel="stylesheet" href="../common/css/pretendardvariable-dynamic-subset.css">
 
+
   <!-- og -->
   <meta property="og:title" content="킹콩 영어 유치원">
   <meta property="og:description" content="킹콩 영어 유치원에 오신걸 환영합니다.">
@@ -21,12 +22,17 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./images./favicon/favicon-16x16.png">
   <link rel="manifest" href="./site.webmanifest">
 
+  <link rel="stylesheet" href="../common/style/swiper-bundle.min.css">
   <!-- 공통 -->
   <link rel="stylesheet" href="./style.css">
   <!-- 모바일버전 -->
   <link rel="stylesheet" href="./mobile.css">
   <link rel="stylesheet" href="./tablet.css" media="(width >=716px)">
   <link rel="stylesheet" href="./pc.css" media="(width >=1240px)">
+
+  <script src="../common/style/jquery-3.7.0.min.js"></script>
+  <script src="../common/style/swiper-bundle.min.js"></script>
+  <script defer src="./project1.js"></script>
 </head>
 
 <body>
@@ -126,7 +132,7 @@
           바이링구얼 유아영어
         </p>
       </div>
-      <div class="content-btn">
+      <!-- <div class="content-btn">
         <span><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left"
               width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
               stroke-linecap="round" stroke-linejoin="round">
@@ -154,8 +160,40 @@
           </li>
           <li><a href="#"></a></li>
         </ul>
+      </div> -->
+      <div class="content-list-img swiper mySwiper">
+        <div class="slide swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="slide-book"></a>
+            <div class="content-gallery-txt"><a href="#">자세히보기</a></div>
+          </div>
+          <div class="slide swiper-slide"><a href="#" class="slide-girl"></a></div>
+          <div class="slide swiper-slide"><a href="#" class="slide-teach"></a></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
       </div>
     </section>
+
+
+
+    <!-- <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div> -->
     <section class="content-list">
       <div class="content-list-txt">
         <h2><strong>2023 KINGKONG</strong></h2>

@@ -127,7 +127,8 @@ header nav .global-nav a span {
   font-size: 12px;
   padding-left: 10px;
 }
-.content .content-btn span {
+
+/* .content .content-btn span {
   padding-left: 3%;
 }
 .content .content-btn span svg {
@@ -157,8 +158,12 @@ header nav .global-nav a span {
   bottom: 5%;
   right: 5%;
   position: absolute;
+} */
+.mySwiper .swiper-wrapper .swiper-slide .content-gallery-txt {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
 }
-
 .content-list {
   width: 83.301vw;
   display: grid;

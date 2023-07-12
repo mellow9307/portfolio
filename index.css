@@ -34,7 +34,7 @@ nav li {
   width: 25%;
 }
 
-nav li a {
+nav li .button {
   display: block;
   width: 30%;
   margin: 0 auto;
@@ -43,7 +43,7 @@ nav li a {
   font-family: "Moret", "Assistant", sans-serif;
   text-transform: capitalize;
 }
-li a:after {
+li .button:after {
   display: block;
   width: 100%;
   content: "";
@@ -51,7 +51,7 @@ li a:after {
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
-li a:hover:after {
+li .button:hover:after {
   transform: scaleX(1);
 }
 .header-wrapper {
@@ -299,11 +299,11 @@ li a:hover:after {
 }
 
 .container .container-img a:nth-child(1) {
-  background: url(./images/kinkong.png) no-repeat 50% / cover;
+  background: url(./images/kingkong.png) no-repeat 50% / cover;
   opacity: 0.6;
 }
 .container .container-img a:nth-child(2) {
-  background: url(./images/redesign.png) no-repeat 50% / cover;
+  background: url(./images/redesign.jpg) no-repeat 50% / cover;
   opacity: 0.6;
 }
 .container .container-img a:hover {
@@ -450,6 +450,7 @@ li a:hover:after {
   font-weight: 500;
   text-transform: capitalize;
   text-align: center;
+  line-height: 1rem;
 }
 .contact .contact-box .contact-txt {
   width: 61.61806rem;
@@ -459,6 +460,7 @@ li a:hover:after {
 }
 .contact .contact-box .contact-txt ul {
   padding: 7.12rem 0 0 21.87rem;
+  width: 72%;
 }
 .contact .contact-box .contact-txt li {
   color: #000;
@@ -470,7 +472,38 @@ li a:hover:after {
   text-align: left;
   display: flex;
   align-items: center;
+  position: relative;
 }
+.git:hover {
+  color: #265d49;
+  background: transparent;
+  box-shadow: none;
+}
+.git:before,
+.git:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #265d49;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+.git:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.git:hover:before,
+.git:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
 .contact .contact-box .contact-txt li span {
   background: url(./images/Bstar.png) no-repeat 50% / cover;
   width: 1.5rem;

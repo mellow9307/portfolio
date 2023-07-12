@@ -95,6 +95,15 @@ header nav .global-nav a span {
 .content .content-txt p {
   font-size: 16px;
 }
+/*  */
+
+.mySwiper .swiper-wrapper .swiper-slide .content-gallery-txt {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+/*  */
 .content .content-list .content-list-ul ul {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
