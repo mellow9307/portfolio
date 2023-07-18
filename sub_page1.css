@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url(./common/style/variable.css);
+/* font -'Noto Sans KR', 'Tenor Sans' */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Tenor+Sans&display=swap");
+
+/* header */
+header {
+  height: 70px;
+}
+/* main-intro */
+.main_intro {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding: 7rem 0;
+}
+.main_intro h1 {
+  font-size: var(--size-h1-en);
+  font-family: var(--moret-font);
+  font-weight: 400;
+}
+.main_intro span {
+  display: block;
+  font-family: var(--pretendard-font);
+  font-size: 8.125rem;
+  padding-bottom: 7.8rem;
+  font-weight: 400;
+}
+.main_intro img {
+  width: 11.25rem;
+  height: 11.25rem;
+  position: absolute;
+  top: 17rem;
+  right: 30rem;
+}
+
+/* project */
+.project,
+.style,
+.publishing,
+.problems,
+.review {
+  padding-left: 8.62rem;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 1.5s;
+}
+.project_txt {
+  padding: 3rem 0 0 18.5rem;
+  font-family: var(--pretendard-font);
+  font-size: var(--size-p);
+  font-weight: 400;
+  line-height: 1.875rem;
+  padding-bottom: 12rem;
+}
+.project_txt span {
+  display: block;
+}
+
+/* style */
+.style-txt {
+  padding-left: 9.5rem;
+}
+.style-txt .style_txt_box h3 {
+  font-family: var(--moret-font);
+  font-size: var(--size-h3);
+  font-weight: 600;
+  margin: 5rem 0 1.87rem 0;
+}
+.style-txt .style_txt_box .concept-txt {
+  font-family: var(--pretendard-font);
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+}
+.style-txt .style_txt_box .tag {
+  list-style: none;
+  font-family: var(--moret-font);
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 0;
+  gap: 6.63rem;
+}
+.style-txt .style_txt_box .color {
+  list-style: none;
+  color: #000;
+  font-family: var(--vulf-font);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0;
+  gap: 2.56rem;
+}
+.style-txt .style_txt_box .color li {
+  width: 5.3125rem;
+  height: 5.3125rem;
+  border-radius: 50%;
+  border: 1px solid #000;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.style-txt .style_txt_box .color li p {
+  padding-top: 6rem;
+}
+.style-txt .style_txt_box .color li:nth-child(1) {
+  background-color: #ff6b1b;
+}
+.style-txt .style_txt_box .color li:nth-child(2) {
+  background-color: #ffec83;
+}
+.style-txt .style_txt_box .color li:nth-child(3) {
+  background-color: #4d76c6;
+}
+.style-txt .style_txt_box .color li:nth-child(4) {
+  background-color: #f5f4ec;
+}
+.style-txt .style_txt_box .color li:nth-child(5) {
+  background-color: #000000;
+}
+.style-txt .style_txt_box .color li:nth-child(6) {
+  background-color: #808080;
+}
+.style-txt .style_txt_box .color li:nth-child(7) {
+  background-color: #b3b3b3;
+}
+.style-txt .style_txt_box .font {
+  padding: 0;
+  line-height: 4rem;
+  padding-bottom: 8.75rem;
+}
+.style-txt .style_txt_box .font li:first-child {
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 1.875rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.style-txt .style_txt_box .font li:last-child {
+  color: #000;
+  font-family: "Tenor Sans";
+  font-size: 1.875rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.style-txt .style_txt_box .concept-txt {
+  list-style: inside;
+}
+
+/* bg_box */
+.bg_box {
+  background-color: var(--point-color);
+}
+/* publishing */
+.publishing {
+  padding-top: 8.75rem;
+}
+.publishing .publishing_wrapper .star {
+  color: var(--basic-color);
+}
+.publishing .publishing_wrapper .star span {
+  background: url(./images/Wstar.png) no-repeat 50% / contain;
+}
+.publishing .publishing_txt {
+  padding: 3rem 0 0 12.19rem;
+}
+.publishing .publishing_txt li {
+  color: #f8f3e8;
+  font-family: var(--pretendard-font);
+  font-size: 1.625rem;
+  font-weight: 200;
+  line-height: 3.125rem;
+  list-style: inside;
+}
+
+/* problems */
+.problems {
+  padding-bottom: 8.75rem;
+}
+.problems .problems_wrapper {
+  margin-top: 9.38rem;
+}
+.problems .problems_wrapper .star {
+  color: var(--basic-color);
+}
+.problems .problems_wrapper .star span {
+  background: url(./images/Wstar.png) no-repeat 50% / contain;
+}
+.problems .problems_txt_box {
+  padding-left: 40rem;
+  color: #f8f3e8;
+  font-family: var(--pretendard-font);
+  font-size: var(--size-h4);
+  font-style: normal;
+  font-weight: 600;
+}
+.problems .problems_txt_box .list {
+  list-style: inside;
+  text-decoration-line: underline;
+  padding-top: 2.87rem;
+}
+.problems .problems_txt_box .list_txt {
+  padding-left: 3rem;
+}
+.problems .problems_txt_box .list_txt:first-child {
+  padding-bottom: 6rem;
+}
+.problems .problems_txt_box .list_txt p {
+  padding: 1.25rem 0;
+  width: 47%;
+}
+.problems .problems_txt_box p {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.875rem;
+}
+
+/* review */
+.review .review_wrapper {
+  margin-top: 8.75rem;
+}
+.review .review_txt {
+  width: 50%;
+  margin: 12rem 0 0 18.5rem;
+  color: #333;
+  font-family: var(--pretendard-font);
+  font-size: var(--size-p);
+  font-weight: 400;
+  line-height: 2.375rem;
+  padding-bottom: 8.75rem;
+}
+.review .review_txt p {
+  padding-bottom: 1.5rem;
+}
+
+/* footer */

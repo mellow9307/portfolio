@@ -80,6 +80,17 @@ header nav .global-nav a span {
   align-items: center;
   justify-content: space-between;
 }
+.swiper-button-next {
+  top: 160px;
+  right: 5%;
+}
+.swiper-button-prev {
+  top: 160px;
+}
+.swiper-button-next:after,
+.swiper-button-prev::after {
+  font-size: 2.3rem;
+}
 .content .content-intro .content-img {
   width: 72.917vh;
   margin: 0;

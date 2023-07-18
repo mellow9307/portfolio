@@ -11,14 +11,4 @@ const mySwiper = new Swiper(".mySwiper", {
     delay: 2000,
     disableOnInteraction: false,
   },
-  // breakpoints: {
-  //   716: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 40,
-  //   },
-  //   1240: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 50,
-  //   },
-  // },
 });
