@@ -20,6 +20,7 @@
 //       }
 //     });
 //   });
+
 $(window).scroll(function () {
   const infoTop = document.querySelector(".main_intro").offsetTop;
   console.log(infoTop);

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url(./common/style/variable.css);
+@import url(../common/style/variable.css);
 /* font -'Noto Sans KR', 'Tenor Sans' */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Tenor+Sans&display=swap");
 
@@ -43,7 +43,7 @@ header {
 .review {
   padding-left: 8.62rem;
   margin: 0 auto;
-  opacity: 0;
+  /* opacity: 0; */
   transition: 1.5s;
 }
 .project_txt {
@@ -159,7 +159,7 @@ header {
   color: var(--basic-color);
 }
 .publishing .publishing_wrapper .star span {
-  background: url(./images/Wstar.png) no-repeat 50% / contain;
+  background: url(../images/Wstar.png) no-repeat 50% / contain;
 }
 .publishing .publishing_txt {
   padding: 3rem 0 0 12.19rem;
@@ -184,7 +184,7 @@ header {
   color: var(--basic-color);
 }
 .problems .problems_wrapper .star span {
-  background: url(./images/Wstar.png) no-repeat 50% / contain;
+  background: url(../images/Wstar.png) no-repeat 50% / contain;
 }
 .problems .problems_txt_box {
   padding-left: 40rem;
