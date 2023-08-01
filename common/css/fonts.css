@@ -90,3 +90,59 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Helvetica-95-Black";
+  src: url("../../sub_page3/project2/assets/fonts/Helvetica-95-Black.woff")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gyeonggi";
+  src: url("../../sub_page3/project2/assets/fonts/경기천년바탕_Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SolmoeKimDaeGeon */
+@font-face {
+  font-family: "SolmoeKimDaeGeon";
+  src: url("../fonts/SolmoeKimDaeGeon-Light.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SolmoeKimDaeGeon";
+  src: url("../fonts/솔뫼김대건Light.woff2") format("woff2");
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+}
+/* EBS_Hunminjeongeum */
+@font-face {
+  font-family: "EBS_Hunminjeongeum";
+  src: url("../fonts/EBS_Hunminjeongeum_L.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EBS_Hunminjeongeum";
+  src: url("../fonts/EBS_Hunminjeongeum_R.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EBS_Hunminjeongeum";
+  src: url("../fonts/EBS_Hunminjeongeum_SB.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

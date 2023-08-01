@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>sub_page4</title>
+    <link rel="stylesheet" href="../common/css/fonts.css" />
+    <link rel="stylesheet" href="../common/style/reset.css" />
+    <link rel="stylesheet" href="../common/css/pretendardvariable-dynamic-subset.css" />
+
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="../common/style/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../common/style/style.css" />
+    <link rel="stylesheet" href="./sub_page4.css" />
+
+    <script src="./common/style/jquery-3.7.0.min.js"></script>
+    <script defer src="./sub_page1.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html#main" class="button">Main</a></li>
+                <li><a href="../index.html#project" class="button">Project</a></li>
+                <li><a href="../index.html#skill" class="button">Skills</a></li>
+                <li><a href="../index.html#about" class="button">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="main_intro">
+                <h1>추사<span>김 정 희</span></h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="project flex">
+                <div class="project_wrapper">
+                    <h2 class="star flex"><span></span>Project</h2>
+                </div>
+                <div class="project_txt">
+                    <p>
+                        기존에 있는 사이트를 새롭게 리디자인하고 스크립트를 사용하여 구현</p>
+                    <p>
+                        정보만 가득한 기존 웹을 보완하여, 좀 더 깔끔하고 웹에 어울릴만한 디자인으로 수정하고,
+                        정보제공에 있어 텍스트를 줄여 간단하고 정확하게 정보전달을 목적으로 두었습니다.
+                    </p>
+                    <div class="project_list">
+                        <ul class="flex">
+                            <Li>타입: web_redesign </Li>
+                            <Li>기여도: 개인 프로젝트 100%</Li>
+                            <Li>작업기간: 23.07.20 ~ 07.28</Li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="style flex">
+                <div class="style_wrapper">
+                    <h2 class="star flex"><span></span>Style Guide</h2>
+                </div>
+                <div class="style-txt">
+                    <div class="style_txt_box">
+                        <h3>Concept</h3>
+                        <ul>
+                            <li class="concept-txt">
+                                모던한 느낌의 깔끔한 정보전달
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="style_txt_box">
+                        <h3>Keyword</h3>
+                        <ul class="flex tag">
+                            <li>#모던</li>
+                            <li>#기품있는</li>
+                            <li>#문화적</li>
+                        </ul>
+                    </div>
+                    <div class="style_txt_box">
+                        <h3>Color</h3>
+                        <ul class="flex color">
+                            <li>
+                                <p>#000000</p>
+                            </li>
+                            <li>
+                                <p>#FFFFFF</p>
+                            </li>
+                            <li>
+                                <p>#CDCDCD</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="style_txt_box">
+                        <h3>Typography</h3>
+                        <ul class="font">
+                            <li>EBS_Hunminjeongeum - 기본서체</li>
+                            <li>SolmoeKimDaeGeon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg_box">
+            <div class="publishing flex">
+                <div class="publishing_wrapper">
+                    <h2 class="star flex"><span></span>Publishing</h2>
+                </div>
+                <div class="publishing_txt">
+                    <ul>
+                        <li>비동기함수 setTimeout을 이용한 순차적 이미지</li>
+                        <li>flex를 이용한 웹페이지 레이아웃 제작/제어</li>
+                        <li>CSS를 사용한 hover 효과</li>
+                        <li>z-index를 활용한 레이어 구성</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="problems">
+                <div class="problems_wrapper">
+                    <h2 class="star flex"><span></span>Problems & Solution</h2>
+                </div>
+                <div class="problems_txt_box">
+                    <ul>
+                        <li class="list"> 이미지가 순차적으로 보이지 않는다!</li>
+                        <li class="list_txt">
+                            <p>
+                                setTimeout 활용을 잘 하지 못하였다.
+                            </p>
+                            <p>
+                                span을 각각 찾아주고, forEach를 사용하여 각 인덱스에 클래스 값을 추가해주었다.
+                                그후 setTimeout에 백틱을 사용하여 시간을 각각 순차적으로 넣어주어,
+                                시간차를 만들어준후 실행시켜보았다.
+                            </p>
+                            <p>글자이미지 하나하나 시간 간격을 두고 이미지가 보였다.</p>
+                        </li>
+                        <li class="list">여백값을 어떻게 주어야 하는가.</li>
+                        <li class="list_txt">
+                            <p>여백의 미를 주면서 정보전달을 하는법</p>
+                            <p>
+                                박문관 특성의 고상한 느낌을 살리면서 여백의 미를 주기위해 고민해 보았다.
+                            </p>
+                            <p>
+                                이미지의 크기를 각각 다르게 주어, 깔끔하지만 비어보이지 않게 디자인하였다.
+                                또한 이미지의 위치를 조금씩 다르게 주어 심심해 보이는 느낌을 없앴다.
+                            </p>
+                            <p>최종적으로는 심플한 디자인이지만 정보 제공 측면에서는 가독성이
+                                우수한 결과물을 만들어냈기 때문에 만족스럽습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="review flex">
+                <div class="review_wrapper">
+                    <h2 class="star flex"><span></span>Review</h2>
+                </div>
+                <div class="review_txt">
+                    <p>
+                        디자인을 할때 정보가 많지 않아 쉬울거라고 생각했는데, 막상 디자인을 해보니 정보가 많지 않아
+                        깔끔하지만 모던하면서 심심하지 않은 느낌을 주기 위해 많이 고민해 보았습니다.
+                    </p>
+                    <p>
+                        디자인을 마치고 header이미지의 텍스트가 순차적으로 나오는 부분을 구현하려고 하였는데 잘 되지않았습니다.
+                        배열이 한번에 묶여 있어 순차적이 아닌 한번에 같이 구현이 되었고, 함수에 인덱스를 넣어 순차적으로 시간값을 주어 텍스트가 하나씩 구현되게 시도했습니다. 수정을 거쳐 구현에
+                        성공했고, 만족스러운 결과값이 나왔습니다.
+                    </p>
+                    <p>
+                        여백의 활용을 잘못하면 허전해 보일수있다는걸 다시 한번 알게되었고,
+                        디자인부분에서도 더 많이 공부해야겠다는 생각을 하게 되었습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="review_btn">
+                <a href="./project4/project4.html" target="_blank">사이트 바로가기</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-slide">
+            <div class="footer-slide-box">
+                <div class="leftBox">
+                    <h2>HTML5 &<span>CSS3</span></h2>
+                    <span></span>
+                    <h2>JavaScript &<span>jQuery</span></h2>
+                    <span></span>
+                    <h2>Open API<span>Toll</span></h2>
+                    <span></span>
+                    <h2>HTML5 &<span>CSS3</span></h2>
+                    <span></span>
+                    <h2>JavaScript &<span>jQuery</span></h2>
+                    <span></span>
+                    <h2>Open API<span>Toll</span></h2>
+                    <span></span>
+                    <h2>HTML5 &<span>CSS3</span></h2>
+                    <span></span>
+                    <h2>JavaScript &<span>jQuery</span></h2>
+                    <span></span>
+                    <h2>Open API<span>Toll</span></h2>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

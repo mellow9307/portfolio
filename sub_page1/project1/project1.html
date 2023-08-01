@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
   <title>킹콩 영어 유치원</title>
-  <link rel="stylesheet" href="../common/style/reset.css">
-  <link rel="stylesheet" href="../common/css/pretendardvariable-dynamic-subset.css">
+  <link rel="stylesheet" href="../../common/style/reset.css">
+  <link rel="stylesheet" href="../../common/css/pretendardvariable-dynamic-subset.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   <!-- og -->
@@ -22,7 +23,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./images./favicon/favicon-16x16.png">
   <link rel="manifest" href="./site.webmanifest">
 
-  <link rel="stylesheet" href="../common/style/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../common/style/swiper-bundle.min.css">
   <!-- 공통 -->
   <link rel="stylesheet" href="./style.css">
   <!-- 모바일버전 -->
@@ -30,8 +31,9 @@
   <link rel="stylesheet" href="./tablet.css" media="(width >=716px)">
   <link rel="stylesheet" href="./pc.css" media="(width >=1240px)">
 
-  <script src="../common/style/jquery-3.7.0.min.js"></script>
-  <script src="../common/style/swiper-bundle.min.js"></script>
+  <script src="../../common/style/jquery-3.7.0.min.js"></script>
+  <script src="../../common/style/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script defer src="./project1.js"></script>
 </head>
 
@@ -88,7 +90,7 @@
 
   <!-- section1 -->
   <article class="main-intro">
-    <section class="main-banner">
+    <section class="main-banner" data-aos="zoom-out-up" data-aos-duration="1500">
       <h3>원어민 Debate class 모집</h3>
       <h1>대상: 초등학교 1학년 ~ 3학년</h1>
       <h1>(영어소통가능)</h1>
@@ -106,7 +108,7 @@
 
   <!-- section2 -->
   <article class="content">
-    <section class="content-intro">
+    <section class="content-intro" data-aos="zoom-out-up" data-aos-duration="1500">
       <div class="content-img">
         <a href="#"><img src="./images/content.png" alt="영어수업하는 아이와 선생님">
         </a>
@@ -148,30 +150,13 @@
       </div>
     </section>
 
-
-
-    <!-- <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div> -->
     <section class="content-list">
-      <div class="content-list-txt">
+      <div class="content-list-txt" data-aos="fade-up" data-aos-duration="3000">
         <h2><strong>2023 KINGKONG</strong></h2>
         <h3>becoming</h3>
         <h2><strong>HOME</strong></h2>
       </div>
-      <div class="content-list-ul">
+      <div class="content-list-ul" data-aos="fade-up" data-aos-duration="3000">
         <ul>
           <li>
             <h4>Happy Home</h4>
@@ -214,14 +199,14 @@
 
   <!-- section3 -->
   <article class="harkness">
-    <div class="harkness-intro">
+    <div class="harkness-intro" data-aos="fade-up" data-aos-duration="3000">
       <h2>‘하크니스키즈’<span>English</span></h2>
       <p>
         유아영어 전문가 해피선생이<br>
         개발한 바이링구얼 유아영어
       </p>
     </div>
-    <div class="harkness-main">
+    <div class="harkness-main" data-aos="fade-up" data-aos-duration="3000">
       <div class="harkness-img">
         <div class="harkness-img-list">
         </div>
@@ -348,6 +333,9 @@
     const mobileBtn = document.querySelector(".mobile-btn");
 
     mobileBtn.addEventListener('click', () => globalNav.classList.toggle('active'));
+
+    AOS.init();
+
   </script>
 </body>
 

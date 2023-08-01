@@ -12,7 +12,7 @@ header {
 .main_intro {
   text-align: center;
   position: relative;
-  padding: 7rem 0;
+  padding: 7rem 0 0 0;
 }
 .main_intro h1 {
   font-size: var(--size-h1-en);
@@ -42,7 +42,7 @@ header {
 .progress,
 .uiux,
 .review {
-  padding-left: 8.62rem;
+  padding: 12rem 0 0 8.62rem;
   margin: 0 auto;
   transition: 1.5s;
 }
@@ -54,7 +54,6 @@ header {
   font-size: var(--size-p);
   font-weight: 400;
   line-height: 1.875rem;
-  padding-bottom: 6.69rem;
 }
 .overview_txt p {
   padding-bottom: 2rem;
@@ -76,7 +75,7 @@ header {
 
 /* progress */
 .progress {
-  padding-bottom: 9rem;
+  padding-bottom: 12rem;
 }
 .progress .progress_box {
   padding: 3rem 0 0 19.5rem;
@@ -84,7 +83,8 @@ header {
 .progress .progress_txt ul li {
   list-style: inside;
   color: #333;
-  font-size: 1.625rem;
+  font-family: var(--pretendard-font);
+  font-size: var(--size-p);
   line-height: 3.125rem;
 }
 .progress .progress_box h3 {
@@ -105,7 +105,7 @@ header {
 /* bg_box */
 .bg_box {
   background-color: var(--point-color);
-  height: 170rem;
+  height: 155rem;
 }
 /* uiux */
 .uiux {
@@ -142,19 +142,34 @@ header {
   padding-top: 10rem;
 }
 .prototype .prototype_img {
-  width: 24.375rem;
-  height: 121.6875rem;
+  width: 19.56rem;
+  height: 93.93rem;
   background: url(./images/prototype_main.jpg) no-repeat 50% / contain;
-  margin: 0 0 0 15.25rem;
+  /* margin: 0 0 0 15.25rem; */
 }
 .prototype .prototype_img_list {
   color: var(--basic-color);
 }
-.prototype .prototype_img_list h3 {
+.prototype .prototype_box {
+  margin: 0 0 0 15.25rem;
+}
+.prototype .prototype_box h3 {
   font-family: var(--moret-font);
   font-size: var(--size-h3);
+  color: var(--basic-color);
   font-weight: 600;
-  margin: 2rem 0 1.87rem 13.19rem;
+  padding-bottom: 2.38rem;
+}
+.prototype .prototype_box p {
+  color: var(--basic-color);
+  font-family: var(--pretendard-font);
+  font-size: var(--size-p);
+  font-weight: 500;
+  line-height: 3.125rem;
+  padding-bottom: 3rem;
+}
+.prototype .prototype_box p span {
+  display: block;
 }
 .prototype .prototype_img_list .prototype_img_box {
   display: grid;
@@ -162,37 +177,77 @@ header {
   gap: 8rem;
   margin-left: 13.19rem;
 }
+.prototype .prototype_img_list {
+  padding-top: 25rem;
+}
+.prototype .prototype_img_list {
+  position: relative;
+}
+.prototype .prototype_img_list .prototype_img_box .prototype_img_txt p {
+  position: absolute;
+}
 .prototype
   .prototype_img_list
   .prototype_img_box
   .prototype_img_txt:nth-child(1) {
-  width: 24.375rem;
-  height: 52.75rem;
+  width: 15.6rem;
+  height: 31.9rem;
   background: url(./images/prototype1.jpg) no-repeat 50% / contain;
 }
 .prototype
   .prototype_img_list
   .prototype_img_box
+  .prototype_img_txt:nth-child(1)
+  p,
+.prototype
+  .prototype_img_list
+  .prototype_img_box
+  .prototype_img_txt:nth-child(2)
+  p {
+  top: -33rem;
+}
+.prototype
+  .prototype_img_list
+  .prototype_img_box
+  .prototype_img_txt:nth-child(2)
+  p {
+  width: 33%;
+}
+.prototype
+  .prototype_img_list
+  .prototype_img_box
   .prototype_img_txt:nth-child(2) {
-  width: 24.375rem;
-  height: 52.75rem;
+  width: 15.6rem;
+  height: 31.9rem;
   background: url(./images/prototype2.jpg) no-repeat 50% / contain;
 }
 .prototype
   .prototype_img_list
   .prototype_img_box
   .prototype_img_txt:nth-child(3) {
-  width: 24.375rem;
-  height: 52.75rem;
+  width: 15.6rem;
+  height: 31.9rem;
   background: url(./images/prototype3.jpg) no-repeat 50% / contain;
 }
 .prototype
   .prototype_img_list
   .prototype_img_box
   .prototype_img_txt:nth-child(4) {
-  width: 24.375rem;
-  height: 52.75rem;
+  width: 15.6rem;
+  height: 31.9rem;
   background: url(./images/prototype4.jpg) no-repeat 50% / contain;
+}
+.prototype
+  .prototype_img_list
+  .prototype_img_box
+  .prototype_img_txt:nth-child(3)
+  p,
+.prototype
+  .prototype_img_list
+  .prototype_img_box
+  .prototype_img_txt:nth-child(4)
+  p {
+  top: 5rem;
 }
 .prototype .prototype_img_list .prototype_img_box .prototype_img_txt p {
   padding-top: 54rem;
@@ -211,9 +266,6 @@ header {
 }
 
 /* review */
-.review {
-  padding-top: 3.81rem;
-}
 .review .review_txt {
   width: 71%;
   color: #333;
@@ -230,7 +282,7 @@ header {
   display: block;
 }
 .review_btn {
-  padding: 4.94rem 0 3.87rem 49.62rem;
+  padding: 4.94rem 0 3.87rem 46rem;
   gap: 3.75rem;
 }
 .review_btn .review_btn1,
@@ -239,6 +291,11 @@ header {
   height: 5rem;
   border-radius: 3.125rem;
   border: 1px solid #000;
+  transition: 0.3s;
+}
+.review_btn .review_btn1:hover,
+.review_btn .review_btn2:hover {
+  background-color: var(--point-color);
 }
 .review_btn .review_btn1 a,
 .review_btn .review_btn2 a {
@@ -249,4 +306,8 @@ header {
   display: block;
   text-align: center;
   line-height: 5rem;
+}
+.review_btn .review_btn1 a:hover,
+.review_btn .review_btn2 a:hover {
+  color: var(--basic-color);
 }

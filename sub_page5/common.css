@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+  text-transform: capitalize;
+  text-align: center;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+img {
+  /* width: 100%; */
+}
+.flex {
+  display: flex;
+}
+.icon img {
+  width: 10%;
+}
+h3 {
+  font-size: var(--font-size-26);
+  font-weight: 300;
+  margin: 120px 0 60px 0;
+  font-family: var(--main-font-kr);
+}

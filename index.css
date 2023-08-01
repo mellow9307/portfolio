@@ -161,7 +161,6 @@
 .container {
   overflow: hidden;
   position: relative;
-  padding-bottom: 134px;
 }
 .container .container-wrapper h1 span {
   font-family: "Vulf Sans", "Assistant", sans-serif;
@@ -247,15 +246,19 @@
 }
 
 .container .container-img a:nth-child(1) {
-  background: url(./images/kingkong.png) no-repeat 50% / cover;
+  background: url(./images/teddy_bear1.png) no-repeat 50% / cover;
   opacity: 0.6;
 }
 .container .container-img a:nth-child(2) {
-  background: url(./images/redesign.jpg) no-repeat 50% / cover;
+  background: url(./images/UIUX.jpg) no-repeat 50% / cover;
   opacity: 0.6;
 }
 .container .container-img a:nth-child(3) {
-  background: url(./images/teddy_bear1.png) no-repeat 50% / cover;
+  background: url(./images/kingkong.png) no-repeat 50% / cover;
+  opacity: 0.6;
+}
+.container .container-img a:nth-child(4) {
+  background: url(./images/web_redesign.jpg) no-repeat 50% / cover;
   opacity: 0.6;
 }
 .container .container-img a:hover {

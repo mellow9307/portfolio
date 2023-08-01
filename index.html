@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./common/style/reset.css" />
   <link rel="stylesheet" href="./common/css/fonts.css" />
   <link rel="stylesheet" href="./common/css/pretendardvariable-dynamic-subset.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- og -->
   <meta property="og:title" content="JO Yeon Hee">
@@ -20,6 +21,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+
   <link rel="manifest" href="./site.webmanifest">
   <link rel="stylesheet" href="./common/style/swiper-bundle.min.css">
   <link rel="stylesheet" href="./common/style/style.css">
@@ -27,6 +29,7 @@
 
   <script src="./common/style/jquery-3.7.0.min.js"></script>
   <script src="./common/style/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script defer src="./index.js"></script>
 </head>
 
@@ -145,7 +148,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="container-wrapper" id="project">
         <h1>my<span>project</span></h1>
@@ -153,16 +156,17 @@
       </div>
       <div class="container-box swiper mySwiper">
         <div class="container-img swiper-wrapper">
-          <a href="./project1/project1.html" target="_blank" class="swiper-slide"></a>
-          <a href="#" class="swiper-slide"></a>
-          <a href="#" class="swiper-slide"></a>
+          <a href="./sub_page3/sub_page3.html" class="swiper-slide"></a>
+          <a href="./sub_page2/sub_page2.html" class="swiper-slide"></a>
+          <a href="./sub_page1/sub_page1.html" class="swiper-slide"></a>
+          <a href="./sub_page4/sub_page4.html" class="swiper-slide"></a>
         </div>
         <div class="swiper_btn">
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="skill" id="skill">
+      <div class="skill" id="skill" data-aos="fade-up" data-aos-duration="1000">
         <div class="skill-intro">
           <span></span>
           <h2>Tech Stack . Skill’s</h2>
@@ -223,7 +227,7 @@
           </div>
         </div>
       </div>
-      <div class="contact" id="about">
+      <div class="contact" id="about" data-aos="fade-up" data-aos-duration="1000">
         <h1>Contact Me!</h1>
         <div class="contact-box">
           <div class="contact-intro">
@@ -291,7 +295,7 @@
         });
       });
     });
-
+    AOS.init();
   </script>
 
 </body>
