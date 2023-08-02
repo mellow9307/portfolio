@@ -146,3 +146,28 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* montserrat */
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Noto sans kR */
+@font-face {
+  font-family: "Noto sans kR";
+  src: url("../fonts/NotoSansKR-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
