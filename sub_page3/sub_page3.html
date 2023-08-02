@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../common/css/fonts.css" />
     <link rel="stylesheet" href="../common/style/reset.css" />
     <link rel="stylesheet" href="../common/css/pretendardvariable-dynamic-subset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png" />
@@ -16,6 +17,7 @@
 
     <link rel="stylesheet" href="../common/style/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../common/style/style.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="./sub_page3.css">
 </head>
 
@@ -40,7 +42,7 @@
         </section>
 
         <section>
-            <div class="project flex">
+            <div class="project flex" data-aos="fade-right" data-aos-duration="3000">
                 <div class="project_wrapper">
                     <h2 class="star flex"><span></span>Project</h2>
                 </div>
@@ -68,7 +70,7 @@
         </section>
 
         <section>
-            <div class="progress flex">
+            <div class="progress flex" data-aos="fade-right" data-aos-duration="3000">
                 <div class="progress_wrapper">
                     <h2 class="star flex"><span></span>Progress</h2>
                 </div>
@@ -92,11 +94,11 @@
 
         <section class="bg_box">
             <div class="style flex">
-                <div class="style_wrapper">
+                <div class="style_wrapper" data-aos="fade-right" data-aos-duration="3000">
                     <h2 class="star flex"><span></span>Style Guide</h2>
                 </div>
                 <div class="style-txt">
-                    <div class="style_txt_box">
+                    <div class="style_txt_box" data-aos="fade-right" data-aos-duration="3000">
                         <h3>Concept</h3>
                         <ul>
                             <li class="concept-txt">
@@ -104,7 +106,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="style_txt_box">
+                    <div class="style_txt_box" data-aos="fade-right" data-aos-duration="3000">
                         <h3>Keyword</h3>
                         <ul class="flex tag">
                             <li>#귀여움</li>
@@ -112,7 +114,7 @@
                             <li>#깜찍함</li>
                         </ul>
                     </div>
-                    <div class="style_txt_box">
+                    <div class="style_txt_box" data-aos="fade-right" data-aos-duration="3000">
                         <h3>Color</h3>
                         <ul class="flex color">
                             <li>
@@ -132,7 +134,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="style_txt_box">
+                    <div class="style_txt_box" data-aos="fade-right" data-aos-duration="3000">
                         <h3>Typography</h3>
                         <ul class="font">
                             <li>GyeonggiBatang - 한글 기본 서체</li>
@@ -141,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <div class="publishing flex">
+            <div class="publishing flex" data-aos="fade-right" data-aos-duration="3000">
                 <div class="publishing_wrapper">
                     <h2 class="star flex"><span></span>Publishing</h2>
                 </div>
@@ -169,7 +171,7 @@
         </section>
 
         <section>
-            <div class="problems">
+            <div class="problems" data-aos="fade-right" data-aos-duration="3000">
                 <div class="problems_wrapper">
                     <h2 class="star flex"><span></span>Problems & Solution</h2>
                 </div>
@@ -205,17 +207,18 @@
         </section>
 
         <section>
-            <div class="bad flex">
+            <div class="bad flex" data-aos="fade-right" data-aos-duration="3000">
                 <div class="bad_wrapper">
                     <h2 class="star flex"><span></span>잘한 점</h2>
                 </div>
                 <div class="bad_txt">
                     <p>스크립트 실력 부족으로 다양한 스크립트를 구현하지 못한거 같아 아쉬움을 느꼈습니다.</p>
                 </div>
+            </div>
         </section>
 
         <section>
-            <div class="best flex">
+            <div class="best flex" data-aos="fade-right" data-aos-duration="3000">
                 <div class="best_wrapper">
                     <h2 class="star flex"><span></span>잘한 점</h2>
                 </div>
@@ -227,10 +230,11 @@
                         <li>모두가 성실하고 열심히 참여</li>
                     </ul>
                 </div>
+            </div>
         </section>
 
         <section>
-            <div class="review flex">
+            <div class="review flex" data-aos="fade-right" data-aos-duration="3000">
                 <div class="review_wrapper">
                     <h2 class="star flex"><span></span>Review</h2>
                 </div>
@@ -281,6 +285,10 @@
             </div>
         </footer>
     </main>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

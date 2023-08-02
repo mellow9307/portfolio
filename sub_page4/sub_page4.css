@@ -15,12 +15,12 @@ header {
 .main_intro h1 {
   font-size: 10rem;
   font-size: var(--size-h1-en);
-  font-family: "Solmoe KimDaeGeonOTF";
+  font-family: "SolmoeKimDaeGeon";
   font-weight: 400;
   text-align: center;
 }
 .main_intro span {
-  font-family: "EBS Hunminjeongeum SB";
+  font-family: "EBS_Hunminjeongeum";
   padding-bottom: 7.8rem;
   font-weight: 400;
   padding-left: 3rem;

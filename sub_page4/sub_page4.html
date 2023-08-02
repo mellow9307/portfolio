@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../common/css/fonts.css" />
     <link rel="stylesheet" href="../common/style/reset.css" />
     <link rel="stylesheet" href="../common/css/pretendardvariable-dynamic-subset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png" />
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="./sub_page4.css" />
 
     <script src="./common/style/jquery-3.7.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="./sub_page1.js"></script>
 </head>
 
@@ -42,7 +44,7 @@
         </section>
 
         <section>
-            <div class="project flex">
+            <div class="project flex" data-aos="fade-right" data-aos-duration="3000">
                 <div class="project_wrapper">
                     <h2 class="star flex"><span></span>Project</h2>
                 </div>
@@ -66,11 +68,11 @@
 
         <section>
             <div class="style flex">
-                <div class="style_wrapper">
+                <div class="style_wrapper" data-aos="fade-right" data-aos-duration="3000">
                     <h2 class="star flex"><span></span>Style Guide</h2>
                 </div>
                 <div class="style-txt">
-                    <div class="style_txt_box">
+                    <div class="style_txt_box" data-aos="fade-right" data-aos-duration="3000">
                         <h3>Concept</h3>
                         <ul>
                             <li class="concept-txt">
@@ -78,7 +80,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="style_txt_box">
+                    <div class="style_txt_box" data-aos="fade-right" data-aos-duration="3000">
                         <h3>Keyword</h3>
                         <ul class="flex tag">
                             <li>#모던</li>
@@ -86,7 +88,7 @@
                             <li>#문화적</li>
                         </ul>
                     </div>
-                    <div class="style_txt_box">
+                    <div class="style_txt_box" data-aos="fade-right" data-aos-duration="3000">
                         <h3>Color</h3>
                         <ul class="flex color">
                             <li>
@@ -100,7 +102,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="style_txt_box">
+                    <div class="style_txt_box" data-aos="fade-right" data-aos-duration="3000">
                         <h3>Typography</h3>
                         <ul class="font">
                             <li>EBS_Hunminjeongeum - 기본서체</li>
@@ -112,7 +114,7 @@
         </section>
 
         <section class="bg_box">
-            <div class="publishing flex">
+            <div class="publishing flex" data-aos="fade-right" data-aos-duration="3000">
                 <div class="publishing_wrapper">
                     <h2 class="star flex"><span></span>Publishing</h2>
                 </div>
@@ -126,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="problems">
+            <div class="problems" data-aos="fade-right" data-aos-duration="3000">
                 <div class="problems_wrapper">
                     <h2 class="star flex"><span></span>Problems & Solution</h2>
                 </div>
@@ -163,7 +165,7 @@
         </section>
 
         <section>
-            <div class="review flex">
+            <div class="review flex" data-aos="fade-right" data-aos-duration="3000">
                 <div class="review_wrapper">
                     <h2 class="star flex"><span></span>Review</h2>
                 </div>
@@ -216,6 +218,10 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
