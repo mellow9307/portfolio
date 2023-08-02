@@ -235,11 +235,17 @@ header .header-wrapper .nav-icon li:first-child a img {
   margin: 15px auto;
 }
 .best .best-item {
+  width: 80%;
+  margin: 0 auto;
   justify-content: center;
 }
 .best .best-item .item1 {
+  width: 50%;
   background-color: #eee;
   margin: 0 10px;
+}
+.best .best-item .item1 img {
+  width: 100%;
 }
 .best .best-item .item-txt {
   text-align: left;
@@ -262,8 +268,12 @@ header .header-wrapper .nav-icon li:first-child a img {
   font-weight: bold;
 }
 .best .best-item .item2 {
+  width: 50%;
   background-color: #eee;
   margin: 0 10px;
+}
+.best .best-item .item2 img {
+  width: 100%;
 }
 .best .best-item .icon {
   background-color: #dedede;
